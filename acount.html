@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>Matir Bank</title>
+    </head>
+    <body>
+        <header>
+            <h1 class="text-5xl text-center my-12"> Welcome to <span class="text-purple-600 font-semibold">Your Bank</span> Account </h1>
+        </header>
+        <main class="w-3/4 mx-auto">
+            <!-- Blance info -->
+            <section>
+                <div class="grid gap-3 grid-cols-3 my-5">
+                    <div class="blance-box bg-purple-100 text-center p-5 rounded">
+                        <h3 class="text-3xl">Deposit</h3>
+                        <h3 class="text-5xl">$<span id="total-diposit-amount" >00</span></h3>
+                        
+                    </div>
+                    <div class="blance-box bg-purple-300 text-center p-5 rounded">
+                        <h3 class="text-3xl">Withdraw</h3>
+                        <h3 class="text-5xl">$<span id="total-withdraw-amount" >00</span></h3>
+                    </div>
+                    <div class="blance-box bg-purple-900 text-center p-5 rounded text-white">
+                        <h3 class="text-3xl">Blance</h3>
+                        <h3 class="text-5xl">$<span id="total-blance-amount" >215</span></h3>
+                    </div>
+                </div>
+            </section>
+            <!-- Diposit and withdraw input -->
+            <section>
+                <div class="grid gap-3 grid-cols-2 my-8">
+                    <div class="text-center bg-purple-100 rounded">
+                        <input type="text" name="diposit" id="input-diposit" placeholder="Enter your diposit amount" class="border-2 border-gray-300 rounded block mx-auto my-3 p-2 w-1/2 mt-8">
+                        <button id="diposit-submit" class="bg-purple-700 text-white px-8 py-2 rounded font-semibold mb-5 ">Diposit</button>
+                    </div>
+                    <div class="text-center bg-purple-100 rounded">
+                        <input type="text" name="email" id="input-withdraw" placeholder="Enter your withdraw amount" class="border-2 border-gray-300 rounded block mx-auto my-3 p-2 w-1/2  mt-8">
+                        <button id="withdraw-submit" class="bg-purple-700 text-white px-8 py-2 rounded font-semibold mb-5 ">Withdraw</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <script src="account.js"></script>
+    </body>
+</html>

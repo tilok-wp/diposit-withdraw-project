@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>Matir Bank</title>
+    </head>
+    <body>
+        <h1 class="text-5xl text-center my-12"> Welcome to <span class="text-purple-600 font-semibold">Your Bank</span> Login </h1>
+        <main>
+            <section class="bg-purple-100 w-3/4 mx-auto text-center shadow-lg rounded py-5">
+                <h3 class="text-4xl my-5">Log in</h3>
+                <h3 class="text-1xl my-5" id="errorMassage"></h3>
+                <div action="">
+                    <input type="email" name="email" id="inputEemail" placeholder="Your email" class="border-2 border-gray-300 rounded block mx-auto my-3 p-2 w-1/2">
+                    <input type="password" name="password" id="inputPassword" placeholder="Password" class="border-2 border-gray-300 rounded block mx-auto my-3 p-2 w-1/2">
+                    <button id="login-submit" class="bg-purple-700 text-white px-8 py-2 rounded font-semibold mb-5 ">Submit now</button>
+                </div>
+            </section>
+        </main>
+        <script src="bank.js"></script>
+    </body>
+</html>
